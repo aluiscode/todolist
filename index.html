@@ -3,24 +3,25 @@
   <head>
     <link rel="stylesheet" href="styles.css">
     <title>TodoList</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   </head>
   <body>
     <div class="todolist">
-      <section class="todolist__header">
-        <div class="todolist__header--title">
-          <h1>TodoList</h1>
-        </div>
-        <div class="todolist__header--input">
-          <input id="newTask" type="text" placeholder="Task">
-          <button onclick="newElement()" class="button">Add</button>
-        </div>
-      </section>
+      <header class="todolist__header">
+        <h1>Todo List</h1>
+      </header>
 
-      <section class="todolist__list">
-        <ul id=todolist__list--menu>
-          </ul>
+      <form class="todolist__addTask">
+        <input class="todolist__addTask--input" placeholder="Add a new task">
+        <button class="todolist__addTask--button" >Add</button>
+      </form>
+
+      <section class="list">
+        <ul class="list__menu">
+        </ul>
       </section>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>

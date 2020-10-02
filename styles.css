@@ -1,10 +1,8 @@
 body{
+  margin: 0;
+  padding: 0;
   background-color: aliceblue;
 }
-
-/* h1,h2.h3,h4,h5{
-  margin: 0;
-} */
 
 .todolist{
   border: 1px solid black;
@@ -21,23 +19,33 @@ body{
   background-color: mediumslateblue;
 }
 
-.todolist__header--title{
+.todolist__header h1{
   color: darkslategray;
 }
 
-.todolist__header--input input{
+.todolist__addTask{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: mediumslateblue;
+}
+
+.todolist__addTask input{
   height: 20px;
   border-radius: 5px;
   border: none;
   outline: none;
 }
 
-.todolist__header--input input:hover{
+.todolist__addTask input:hover{
   box-shadow: 0 1px 6px 0 #20212447;
   border-color: #dfe1e500;
 }
 
-button{
+.todolist__addTask button{
   height: 20px;
   width: 60px;
   border: 1px solid seagreen;
@@ -47,38 +55,50 @@ button{
 
 }
 
-button:hover{
+.todolist__addTask button:hover{
   background-color: forestgreen;
 }
 
-button:active{
+.todolist__addTask button:active{
   background-color: forestgreen;
   border: none;
 }
 
-.todolist__list{
-  height: auto;
-}
-
-#todolist__list--menu{
-  margin-top: 0;
+.list__menu{
+  margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-#todolist__list--menu li{
-  height: 40px;
+.list{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.list--item{
+  list-style: none;
+}
+
+
+/* .list__menu li{
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
   align-items: center;
   list-style: none;
   font-weight: 550;
 }
 
-#todolist__list--menu li span{
+.list__menu li span{
   cursor: pointer;
 }
+*/
 
-li:nth-child(2n+1){
+.list:nth-child(2n+1){
   background-color: orange;
   color: aliceblue;
 }
