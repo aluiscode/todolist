@@ -35,7 +35,7 @@ const addTask = (e) => {
   //Trash <button>
   const trashButton = document.createElement('button');
   trashButton.innerHTML = '<span class="material-icons">delete</span>';
-  trashButton.classList.add('list__actions--completed')
+  trashButton.classList.add('list__actions--deleted')
   buttonContainer.appendChild(trashButton);
 
   //append Buttons to div
@@ -43,7 +43,6 @@ const addTask = (e) => {
 
   //append to list
   todoList.appendChild(todoDiv);
-
 }
 
 //Events

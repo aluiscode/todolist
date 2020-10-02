@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: aliceblue;
+  color: darkslategray;
 }
 
 .todolist{
@@ -17,10 +18,6 @@ body{
   align-items: center;
   height: 100px;
   background-color: mediumslateblue;
-}
-
-.todolist__header h1{
-  color: darkslategray;
 }
 
 .todolist__addTask{
@@ -81,8 +78,16 @@ body{
 
 .list--item{
   list-style: none;
+  width: 60%;
 }
 
+.list__actions--completed{
+  background-color: green;
+}
+
+.list__actions--deleted{
+  background-color: red;
+}
 
 /* .list__menu li{
   display: flex;
@@ -98,7 +103,7 @@ body{
 }
 */
 
-.list:nth-child(2n+1){
+.list:nth-child(2n){
   background-color: orange;
-  color: aliceblue;
+  color: da;
 }
